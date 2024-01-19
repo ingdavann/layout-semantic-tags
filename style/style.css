@@ -1,0 +1,212 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+.head-container{
+    background-color: rgb(244, 244, 254);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.nav{
+    margin: auto;
+    width: 90%;
+    height: 4rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.sec-img{
+    height: 100%;
+}
+.sec-img img{
+    height: 100%;
+    object-fit: cover;
+}
+.sec-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-menu ul{
+    display: flex;
+    gap: 1rem;
+}
+.sec-menu ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(0, 0, 91);
+}
+
+/* -----------------Main------------------ */
+.container{
+    margin: auto;
+    width: 90%;
+}
+.container-fluid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: repeat(4,1fr); */
+    gap: 10px; 
+    /* margin-top: 1rem;   */
+}
+.grid-item{
+    padding: 1rem;
+    border-radius: 5px;
+}
+img{
+    width: 100%;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+}
+.text-card{
+    width: 100%;
+    height: 20%;
+}
+.titleOneLine{
+    margin-top: 0.5rem;
+    width: 100%;
+    /* height: 20%; */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.desThreeLine{
+    margin-top: -10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: rgb(125, 125, 125);
+}
+
+/*-----------------Footer------------------*/
+.main-foot{
+    margin-top: 1rem;
+    background-color: rgb(244, 244, 254);
+ }
+
+ .main-foot .content-div{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(0, 0, 91);
+ }
+ .main-foot .content-div .logo-footer{
+    text-align: center;
+ }
+
+.main-foot .content-div .logo-footer img{ 
+    width: 200px;
+    height: 200px;    
+    object-fit: contain;
+ }
+
+ .main-foot .licence{
+    color: rgb(0, 0, 91);
+    font-size: 15px;
+    text-align: center;
+ }
+ .contact{
+    text-align: left;
+ }
+ .contact ul li{
+    list-style: none;
+    margin-left: -2.5rem;
+ }
+ .quick{
+    text-align: left;
+ }
+ .quick ul li{
+    list-style: none;
+    margin-left: -2.5rem;
+ } 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .humbeger-menu{
+        display: block;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+    }
+    .sec-menu ul li{
+        display: none;
+    }
+    .container-fluid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 10px; 
+        margin-top: 6rem;  
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .humbeger-menu{
+        display: block;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+    }
+    .sec-menu ul li{
+        display: none;
+    }
+    .container-fluid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 10px; 
+        margin-top: 6rem;  
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .humbeger-menu{
+        display: block;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+    }
+    .sec-menu ul li{
+        display: none;
+    }
+    .container-fluid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 10px; 
+        margin-top: 6rem;  
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1200px) {
+    .humbeger-menu{
+        display: none;
+        color: darkblue;
+    }
+    .sec-menu ul li{
+        display: block;
+    }
+    .container-fluid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 10px; 
+        margin-top: 6rem;  
+    }
+}
